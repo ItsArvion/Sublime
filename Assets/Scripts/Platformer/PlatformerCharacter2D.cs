@@ -490,6 +490,7 @@ namespace UnityStandardAssets._2D
 
         public void Slimed()
         {
+            Debug.Log("Slimed from platformCharacter 2d");
             // This function runs when a message is sent from colliding with the SlimePit game object.
             // Here we set the player to a 'slimed' state, which changes the player move / platforming settings with some scaled values.
             if (!m_Slimed)
