@@ -69,6 +69,7 @@ namespace UnityStandardAssets._2D
         [Range(0, 3)] [SerializeField] private float m_SlimeMassScale = 1f;                    // Scaling factor on character mass
         [Range(0, 3)] [SerializeField] private float m_SlimeDragScale = 1f;                    // Scaling factor on character's linear drag
         [Range(0, 3)] [SerializeField] private float m_SlimeAngularDragScale = 1f;             // Scaling factor on character's angular drag
+        [Range(0.1f, 2)] [SerializeField] private float m_SlimeSize = 0.5f;                     // Custom: Scaling factor on character's size
         // local Slime scale variables - these need to be set to default of 1 when not slimed, and set to the original values when slimed.
         // The reason for adding this second set of variables is so that there aren't heaps of conditional statements in the move code, 
         // just a permenent scale value in the code which is either 1 (default) or the modified (Slimed state) version.
@@ -80,6 +81,7 @@ namespace UnityStandardAssets._2D
         private float m_s_J2Scale = 1f;
         private float m_s_J2SusFScale = 1f;
         private float m_s_J2SDurScale = 1f;
+        private float m_s_Size = 1f;
         private bool m_Slimed;                          // For determining if the player is in a slimed state
         private float m_SlimeTempTimer = 0f;
         private bool m_SlimeOut = false;                // For determining if the player has left the slimepit
@@ -162,6 +164,8 @@ namespace UnityStandardAssets._2D
             {
                 SlimeTemp();
             }
+
+            ChangeSize();
 
             //Debug.Log(m_SustainedJumpTimer);
 
@@ -487,6 +491,15 @@ namespace UnityStandardAssets._2D
             transform.localScale = theScale;
         }
 
+        // Custom function woah!
+        private void ChangeSize()
+        {
+            // Custom bit
+            Vector3 theScale = transform.localScale;
+            var x_Dir = Mathf.Sign(theScale[0]);
+            transform.localScale = new Vector3(x_Dir*m_s_Size, m_s_Size, 1);
+        }
+
 
         public void Slimed()
         {
@@ -507,6 +520,7 @@ namespace UnityStandardAssets._2D
                 m_s_J2Scale = m_SlimeJump2Scale;
                 m_s_J2SusFScale = m_SlimeJump2SusForceScale;
                 m_s_J2SDurScale = m_SlimeJump2SusDurationScale;
+                m_s_Size = m_SlimeSize;
 
                 // Changing the RigidBody 2D settings according to the Slimed state values.
                 m_Rigidbody2D.mass *= m_SlimeMassScale;
@@ -578,6 +592,7 @@ namespace UnityStandardAssets._2D
             m_s_J2Scale = 1f;
             m_s_J2SusFScale = 1f;
             m_s_J2SDurScale = 1f;
+            m_s_Size = 1f;
 
             //print("UN__SLIMED");
 
