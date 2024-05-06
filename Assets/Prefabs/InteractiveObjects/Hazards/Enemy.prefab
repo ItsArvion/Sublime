@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308243311812982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4178767792177944}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768090198496294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.71, y: 0, z: 0}
+  m_LocalPosition: {x: 0.71, y: -0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4178767792177944}
@@ -137,9 +137,9 @@ SpriteRenderer:
   m_SortingLayerID: -1131555221
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 496a9fef8b43b44f5bb18e666ab0515b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ae53daf77419604abb5a9dfb16d736d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -161,18 +161,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.76}
+  m_Offset: {x: -0.008189201, y: -0.42179203}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.25, y: 1.25}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.2484379, y: 0.43883514}
   m_EdgeRadius: 0
 --- !u!50 &50320517173036792
 Rigidbody2D:
@@ -208,9 +208,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.45}
+  m_Offset: {x: 0.053359985, y: -0.2869649}
   serializedVersion: 2
-  m_Radius: 0.45
+  m_Radius: 0.3551259
 --- !u!114 &114694640299868564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,11 +227,11 @@ MonoBehaviour:
   canDie: 1
   scoreForKill: 100
   hitPoints: 1
-  deadEnemy: {fileID: 21300000, guid: b1a98e1193ee34351ad2695419207690, type: 3}
+  deadEnemy: {fileID: 21300000, guid: 8c444bc31204af545aeb38c7a43eccb2, type: 3}
   deathSpinMin: -100
   deathSpinMax: 100
   flipOnStart: 1
-  instantKill: 0
+  instantKill: 1
   repeatDamagePeriod: 2
   hurtForceX: 300
   hurtForceY: 400
