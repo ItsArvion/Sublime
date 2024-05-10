@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Examples/PlatformerMenu.unity
     guid: a5543afb325d349aebe155eb9e9a13fd
   - enabled: 0
@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jay_Start_Level.unity
     guid: db8e33e630309aa46915b5b68724c1e1
+  - enabled: 1
+    path: Assets/Scenes/WillGreyBox.unity
+    guid: b29a865cc2d65b44b8f5f7778f7df8dc
+  - enabled: 1
+    path: Assets/Scenes/DanteGreyBox.unity
+    guid: 0e1b67f824eebc34c8eb1f91dd91d44d
   m_configObjects: {}
