@@ -42,10 +42,10 @@ namespace UnityStandardAssets._2D
         private void FixedUpdate()
         {
             // If control is disabled, return.
-            if (m_DisableControl) return;
+            if (m_DisableControl) return; 
 
             // Read the inputs.
-            bool crouch = false;
+            bool crouch = false; // disable crouch
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             // DASH UPDATED - Move function was updated in PlatformerCharacter2D with the dash variable as the 5th argument).
             m_Character.Move(h, crouch, m_Jump, m_SustainJump, m_Dash);
