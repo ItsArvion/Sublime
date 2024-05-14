@@ -192,7 +192,7 @@ MonoBehaviour:
   repeatDamagePeriod: 2
   hurtForceX: 300
   hurtForceY: 400
-  behaviour: 2
+  behaviour: 0
   patrolType: 0
   arriveDistance: 0.3
   patrolPoints:
