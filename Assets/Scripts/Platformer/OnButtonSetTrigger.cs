@@ -21,7 +21,7 @@ public class OnButtonSetTrigger : MonoBehaviour
     void Update()
     {
         // Read the input in Update so button presses aren't missed.
-        m_slime = CrossPlatformInputManager.GetButtonDown("Fire2");
+        m_slime = CrossPlatformInputManager.GetButtonDown("Fire3");
             if (m_slime == true) { 
                 Debug.Log (slimed);
                 ProcessMessage();
