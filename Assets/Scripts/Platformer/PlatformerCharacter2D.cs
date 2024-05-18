@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Linq;
 
 
 namespace UnityStandardAssets._2D
@@ -48,6 +49,7 @@ namespace UnityStandardAssets._2D
         private SpriteRenderer m_SpriteRenderer;        // Reference to the player's sprite renderer component.
         private AudioSource m_JumpAudioSource;          // Reference to the player's jump audio source.
         private AudioSource m_MidAirJumpAudioSource;    // Reference to the player's mid air jump audio source.
+        private AudioSource m_DeathAudioSource;
         private float m_HurtTimer = 0f;
         private float m_HurtTime = 0.5f;
         private bool m_Hurt = false;
@@ -103,6 +105,8 @@ namespace UnityStandardAssets._2D
         private AudioSource m_DashAudioSource;    // Reference to the player's mid air jump audio source.
         #endregion
 
+        private RandomSounds script_RandomSounds;
+
         public void OnValidate()
         {
             if (m_MidAirJumpCount < 1)
@@ -126,6 +130,21 @@ namespace UnityStandardAssets._2D
             m_JumpAudioSource = transform.Find("JumpAudioSource").GetComponent<AudioSource>();
             m_MidAirJumpAudioSource = transform.Find("MidAirJumpAudioSource").GetComponent<AudioSource>();
             m_DashAudioSource = transform.Find("DashAudioSource").GetComponent<AudioSource>();
+            m_DeathAudioSource = transform.Find("DeathAudioSource").GetComponent<AudioSource>();
+            script_RandomSounds = this.GetComponent<RandomSounds>();
+
+            // pass in true to include inactive ones
+            var all = FindObjectsOfType<Transform>(true);
+            // Filter and only keep the ones whee the name starts with your string
+            var objs = all.Where(obj => obj.name.StartsWith("DeathAudioSource")).ToList();
+
+            /*m_DeathAudioSource = new AudioSource[objs.Count];
+            for (var i = 0; i < objs.Count; i++) {
+                m_DeathAudioSource[i] = objs[i].GetComponent<AudioSource>();
+            }
+
+            Debug.Log(m_DeathAudioSource);*/
+
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             m_AutoCam = GameObject.Find("MultipurposeCameraRig").GetComponent<UnityStandardAssets.Cameras.AutoCam>();
@@ -449,8 +468,10 @@ namespace UnityStandardAssets._2D
 				m_Anim.SetBool("Death", death);
 
 				GetComponent<Platformer2DUserControl>().enabled = false;
+                PlayDeathSound();
 
-				m_AutoCam.enabled = false;
+
+                m_AutoCam.enabled = false;
 
 				this.enabled = false;
 
@@ -635,6 +656,14 @@ namespace UnityStandardAssets._2D
             {
                 m_DashAudioSource.pitch = UnityEngine.Random.Range(0.85f, 1.10f);
                 m_DashAudioSource.Play();
+            }
+        }
+
+        private void PlayDeathSound()
+        {
+            if (m_DeathAudioSource)
+            {
+                script_RandomSounds.PlaySound();
             }
         }
     }

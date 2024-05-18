@@ -31,7 +31,7 @@ public class Lives : MonoBehaviour
 	}
 
 
-	public void LoseLife ()
+	public void LoseLifeReal()
 	{
 		lives--;
 
@@ -42,6 +42,19 @@ public class Lives : MonoBehaviour
 		}
 
 		livesText.text = "Lives: " + lives;
+	}
+
+	public void LoseLife()
+	{
+		/*lives--;
+
+		if (lives < 0)
+		{
+			Restart();
+			return;
+		}
+
+		livesText.text = "Lives: " + lives;*/
 
 		Invoke("Respawn", 1.5f);
 	}
@@ -57,6 +70,8 @@ public class Lives : MonoBehaviour
 
 	private void Respawn ()
 	{
+		LoseLifeReal();
+
 		player.SendMessage("Respawn");
 
 		GameObject h = GameObject.Find("HealthText");
