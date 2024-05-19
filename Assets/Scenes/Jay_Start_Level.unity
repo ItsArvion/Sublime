@@ -15093,6 +15093,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1976895595}
     m_Modifications:
+    - target: {fileID: 1445361223972397105, guid: abe0ba2ca5bb29a47b73a276a3190b60,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445361223972397105, guid: abe0ba2ca5bb29a47b73a276a3190b60,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.34
+      objectReference: {fileID: 0}
     - target: {fileID: 8204268300370416149, guid: abe0ba2ca5bb29a47b73a276a3190b60,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22958,9 +22968,9 @@ SpriteRenderer:
   m_SortingOrder: -2
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7,
     type: 3}
-  m_Color: {r: 0.20201929, g: 0.2924528, b: 0.18393257, a: 1}
+  m_Color: {r: 0.25673428, g: 0.5283019, b: 0.19769783, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -39626,7 +39636,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: '->
 
-    alt'
+    shift
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39689,7 +39701,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.69189, y: 1.5766277, z: 9.264789, w: 2.2007098}
+  m_margin: {x: 9.69189, y: 1.5766277, z: 9.141061, w: 2.2007098}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -39755,7 +39767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50.937954, y: -16.52343}
+  m_AnchoredPosition: {x: -51.1, y: -16.52343}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &2046709236 stripped
@@ -39781,11 +39793,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4579516250097960, guid: 000e66461b6444fb3b0655ffacaf6e44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.896244
+      value: 64.1
       objectReference: {fileID: 0}
     - target: {fileID: 4579516250097960, guid: 000e66461b6444fb3b0655ffacaf6e44, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.288715
+      value: 24.54
       objectReference: {fileID: 0}
     - target: {fileID: 4579516250097960, guid: 000e66461b6444fb3b0655ffacaf6e44, type: 3}
       propertyPath: m_LocalPosition.z
