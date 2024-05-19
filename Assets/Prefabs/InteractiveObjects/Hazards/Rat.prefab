@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 50320517173036792}
   - component: {fileID: 58260335054397918}
   - component: {fileID: 114694640299868564}
+  - component: {fileID: 8847460628819137379}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Enemy
@@ -155,7 +156,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891609718243338}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -241,3 +242,31 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
+--- !u!68 &8847460628819137379
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891609718243338}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.6374861, y: -0.5652485}
+  - {x: -0.36959076, y: -0.558939}
+  - {x: -0.3364582, y: -0.37194824}
+  - {x: 0.0481205, y: -0.21325302}
+  - {x: 0.5110302, y: -0.37843132}
+  - {x: 0.5623169, y: -0.6391792}
+  - {x: -0.6380348, y: -0.6402464}
+  - {x: -0.6362051, y: -0.5702734}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

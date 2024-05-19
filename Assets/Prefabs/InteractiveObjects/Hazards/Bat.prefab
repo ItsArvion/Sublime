@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308243311812982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.113, z: 0}
+  m_LocalPosition: {x: 0.11, y: 0.814, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4178767792177944}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768090198496294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.56, y: -0.6, z: 0}
+  m_LocalPosition: {x: 0.797, y: -0.025, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4178767792177944}
@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 58260335054397918}
   - component: {fileID: 114694640299868564}
   - component: {fileID: 2408488167804674210}
+  - component: {fileID: 5715744660251116789}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Enemy
@@ -156,7 +157,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891609718243338}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -209,9 +210,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.11457133, y: -0.22883749}
+  m_Offset: {x: 0.11457133, y: -0.0031557083}
   serializedVersion: 2
-  m_Radius: 0.4056344
+  m_Radius: 0.6313162
 --- !u!114 &114694640299868564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,3 +265,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!68 &5715744660251116789
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891609718243338}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.643676, y: -0.04479122}
+  - {x: 0.36214638, y: -0.21808434}
+  - {x: 0.20425606, y: -0.6747103}
+  - {x: 0.12511635, y: -0.6878071}
+  - {x: 0.008218765, y: -0.19563675}
+  - {x: 0.14010048, y: 0.37709904}
+  - {x: 0.45162392, y: 0.57540226}
+  - {x: 0.7570133, y: 0.33780098}
+  - {x: 0.7454605, y: 0.24151897}
+  - {x: 0.64912605, y: 0.23315334}
+  - {x: 0.6483963, y: -0.04134655}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
