@@ -37,7 +37,7 @@ public class PlayMusic : MonoBehaviour {
 	public void PlaySelectedMusic(int musicChoice)
 	{
 		//This switch looks at the integer parameter musicChoice to decide which music clip to play.
-		if (musicChoice > 0 && musicChoice < levelMusic.Length)
+		if (musicChoice > 0 && musicChoice <= levelMusic.Length)
 		{
 			musicSource.clip = levelMusic[musicChoice - 1];
 		}
