@@ -71,7 +71,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.02212143, y: -0.0040216446}
-  m_ConnectedAnchor: {x: -31.831879, y: 10.3029785}
+  m_ConnectedAnchor: {x: 43.74598, y: 12.977879}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 100
@@ -87,6 +87,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8458497542883983573}
     m_Modifications:
+    - target: {fileID: 3284882914659138715, guid: 0afc81ec8aa1ca146a4db4961ab39f0a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 3383433951693630323, guid: 0afc81ec8aa1ca146a4db4961ab39f0a,
         type: 3}
       propertyPath: messageTarget
@@ -167,6 +172,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8458497542883983573}
     m_Modifications:
+    - target: {fileID: 2374524000438444344, guid: 80807334923d9cd488adace36898f67d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 9199328625595266009, guid: 80807334923d9cd488adace36898f67d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 9199328625616407025, guid: 80807334923d9cd488adace36898f67d,
         type: 3}
       propertyPath: m_Name
@@ -242,6 +257,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8458497542883983573}
     m_Modifications:
+    - target: {fileID: 3284882914659138715, guid: 0afc81ec8aa1ca146a4db4961ab39f0a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 3383433951693630323, guid: 0afc81ec8aa1ca146a4db4961ab39f0a,
         type: 3}
       propertyPath: messageTarget
