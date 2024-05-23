@@ -187,7 +187,7 @@ FixedJoint2D:
   m_BreakTorque: 480
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 30.955048, y: 12.749204}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!233 &8204268300919894331
@@ -205,7 +205,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 2.4941902, y: 0}
-  m_ConnectedAnchor: {x: 2.4941902, y: 0}
+  m_ConnectedAnchor: {x: 38.43762, y: 12.749204}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -321,7 +321,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

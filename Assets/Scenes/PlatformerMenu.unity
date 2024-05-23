@@ -204,6 +204,22 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 11423466, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: levelMusic.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11423466, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: levelMusic.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3868523953e4fd54da8b0deb0076c5a1, type: 3}
+    - target: {fileID: 11423466, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: levelMusic.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: a6aad4ebb50a2e647836070bf3797262, type: 3}
+    - target: {fileID: 11423466, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: levelMusic.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: c92dc5b8791387549ae67b09f117524d, type: 3}
     - target: {fileID: 11448812, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -228,6 +244,10 @@ PrefabInstance:
     - target: {fileID: 11448812, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455572, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11459976, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_Color.b
@@ -262,6 +282,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 1f16052dfd5f6f54e94e97ecedd4c86b,
         type: 3}
+    - target: {fileID: 11467570, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 11490476, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -380,7 +404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22470916, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.6157532
+      value: -0.61572266
       objectReference: {fileID: 0}
     - target: {fileID: 22491550, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_AnchorMax.y
@@ -628,6 +652,7 @@ GameObject:
   - component: {fileID: 780653613}
   - component: {fileID: 780653611}
   - component: {fileID: 780653610}
+  - component: {fileID: 780653612}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -651,6 +676,39 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780653609}
   m_Enabled: 1
+--- !u!114 &780653612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780653609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!20 &780653613
 Camera:
   m_ObjectHideFlags: 0

@@ -2,11 +2,13 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Lives : MonoBehaviour 
 {
 
 	// inspector configuration
+	[SerializeField] private bool hasLimitedLives = true;
 	[TooltipAttribute("Number of lives the player has before game over.")]
 	[SerializeField] private int totalLives = 3;	// Number of lives the player has before game over.
 	[TooltipAttribute("The number of lives a health pickup is worth.")]
@@ -25,7 +27,13 @@ public class Lives : MonoBehaviour
 
 		lives = totalLives;
 
-		livesText.text = "Lives: " + lives;
+		if (hasLimitedLives)
+		{
+			livesText.text = "Lives: " + lives;
+		} else
+        {
+			livesText.text = "";
+        }
 
 		player = GameObject.FindGameObjectWithTag("Player");
 	}
@@ -70,7 +78,7 @@ public class Lives : MonoBehaviour
 
 	private void Respawn ()
 	{
-		LoseLifeReal();
+		if (hasLimitedLives) LoseLifeReal();
 
 		player.SendMessage("Respawn");
 
