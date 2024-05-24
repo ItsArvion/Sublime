@@ -205,13 +205,17 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 11423466, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
+      propertyPath: titleMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: fe6ecbefff539ae4bb38fdeb68dff81b, type: 3}
+    - target: {fileID: 11423466, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: levelMusic.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11423466, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: levelMusic.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 3868523953e4fd54da8b0deb0076c5a1, type: 3}
+      objectReference: {fileID: 8300000, guid: d095cd949b49e2d45beef35415332515, type: 3}
     - target: {fileID: 11423466, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: levelMusic.Array.data[1]
       value: 
@@ -219,7 +223,7 @@ PrefabInstance:
     - target: {fileID: 11423466, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: levelMusic.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: c92dc5b8791387549ae67b09f117524d, type: 3}
+      objectReference: {fileID: 8300000, guid: 3abb58eef0a3557469abcc1de465e4b4, type: 3}
     - target: {fileID: 11448812, guid: 45616935e4fe10f48b62da1347801a16, type: 3}
       propertyPath: m_Color.b
       value: 0
