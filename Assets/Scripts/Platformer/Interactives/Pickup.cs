@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Pickup : MonoBehaviour 
+public class Pickup : MonoBehaviour
 {
 	[TooltipAttribute("Audio Clip to play on pickup.")]
-	[SerializeField] private AudioClip sfx = null;					// Audio Clip to play on pickup.
+	[SerializeField] private AudioClip sfx = null;                  // Audio Clip to play on pickup.
+	[TooltipAttribute("Particle effect to spawn on pickup.")]
+	[SerializeField] private GameObject vfx = null;                 // Particle effect to spawn on pickup.
 	[TooltipAttribute("The message (method name) used with SendMessage. The message is sent to all script components attached to me (the pickup).")]
 	[SerializeField] private string messageSelf = null;			// The method name to call with SendMessage. The message is sent to all script components attached to me (the pickup).
 	[TooltipAttribute("The message (method name) used with SendMessage. The message is sent to all script components attached to the colliding GameObject (the player).")]
@@ -37,6 +39,8 @@ public class Pickup : MonoBehaviour
 
 		// play sound effects if specified.
 		if (sfx != null && sfxSource != null) sfxSource.Play();
+		// spawn particles
+		Instantiate(vfx, transform.position, transform.rotation);
 
 		// could instantiate a particle effect...
 
