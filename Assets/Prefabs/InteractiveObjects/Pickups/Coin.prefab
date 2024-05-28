@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: 0f0f1f98eb73543f6af74d3b8fb23f1f, type: 3}
+  vfx: {fileID: 1032538741482212301, guid: 7a463ffecc237bc4e9587c55c519f3b3, type: 3}
   messageSelf: 
   messageOther: 
   messageBroadcast: 
