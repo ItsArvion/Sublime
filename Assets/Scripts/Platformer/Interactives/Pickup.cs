@@ -40,7 +40,7 @@ public class Pickup : MonoBehaviour
 		// play sound effects if specified.
 		if (sfx != null && sfxSource != null) sfxSource.Play();
 		// spawn particles
-		Instantiate(vfx, transform.position, transform.rotation);
+		if (vfx != null) Instantiate(vfx, transform.position, transform.rotation);
 
 		// could instantiate a particle effect...
 
