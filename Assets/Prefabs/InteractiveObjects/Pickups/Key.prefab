@@ -116,10 +116,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: fdcf63a3454d74ea5bdd46db131f3078, type: 3}
+  vfx: {fileID: 0}
   messageSelf: 
   messageOther: 
   messageBroadcast: 
-  messageTarget: {fileID: 0}
+  messageTarget: {fileID: 8994887596970598761, guid: 7a78b9bad7743844dab11c5ed06cebc6,
+    type: 3}
   messageTargetMessage: Open
 --- !u!82 &82395379977489524
 AudioSource:
